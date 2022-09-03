@@ -11,7 +11,7 @@ import {
   RadioGroup,
   Fee,
   TextField,
-} from '@chia/core';
+} from '@lotus/core';
 import {
   Alert,
   Grid,

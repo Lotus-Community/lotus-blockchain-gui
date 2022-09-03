@@ -1,10 +1,10 @@
 import { createApi } from '@reduxjs/toolkit/query/react';
-import chiaLazyBaseQuery from './chiaLazyBaseQuery';
+import lotusLazyBaseQuery from './lotusLazyBaseQuery';
 
-export const baseQuery = chiaLazyBaseQuery({});
+export const baseQuery = lotusLazyBaseQuery({});
 
 export default createApi({
-  reducerPath: 'chiaApi',
+  reducerPath: 'lotusApi',
   baseQuery,
   endpoints: () => ({}),
 });

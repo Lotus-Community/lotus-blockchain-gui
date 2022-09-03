@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useGetTransactionsQuery, useGetTransactionsCountQuery } from '@chia/api-react';
-import type { Transaction } from '@chia/api';
+import { useGetTransactionsQuery, useGetTransactionsCountQuery } from '@lotus/api-react';
+import type { Transaction } from '@lotus/api';
 
 export default function useWalletTransactions(
   walletId: number, 

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Trans } from '@lingui/macro';
-import { type NFTInfo } from '@chia/api';
-import { useTransferNFTMutation } from '@chia/api-react';
+import { type NFTInfo } from '@lotus/api';
+import { useTransferNFTMutation } from '@lotus/api-react';
 import { useForm } from 'react-hook-form';
 import useBurnAddress from '../../hooks/useBurnAddress';
 import {
@@ -11,10 +11,10 @@ import {
   Form,
   Flex,
   TextField,
-  chiaToMojo,
+  lotusToMojo,
   useOpenDialog,
   useShowError,
-} from '@chia/core';
+} from '@lotus/core';
 import {
   Alert,
   Dialog,
@@ -93,7 +93,7 @@ export default function NFTBurnDialog(props: NFTPreviewDialogProps) {
     }
 
     try {
-      const feeInMojos = chiaToMojo(fee || 0);
+      const feeInMojos = lotusToMojo(fee || 0);
 
       await transferNFT({
         walletId: nft.walletId,

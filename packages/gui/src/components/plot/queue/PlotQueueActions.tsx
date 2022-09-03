@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { ConfirmDialog, More, useOpenDialog } from '@chia/core';
+import { ConfirmDialog, More, useOpenDialog } from '@lotus/core';
 import {
   Box,
   Divider,
@@ -12,7 +12,7 @@ import {
   DeleteForever as DeleteForeverIcon,
   Info as InfoIcon,
 } from '@mui/icons-material';
-import { useStopPlottingMutation } from '@chia/api-react';
+import { useStopPlottingMutation } from '@lotus/api-react';
 import type PlotQueueItem from '../../../types/PlotQueueItem';
 import PlotStatus from '../../../constants/PlotStatus';
 import PlotQueueLogDialog from './PlotQueueLogDialog';

@@ -2,7 +2,7 @@ import Unit from './Unit';
 
 // deprecated
 const UnitAliases = {
-  [Unit.CHIA]: ['ch', 'chia', 'xch'],
+  [Unit.LOTUS]: ['ch', 'lotus', 'xch'],
   [Unit.MOJO]: ['mj', 'mojo', 'mojos'],
   [Unit.CAT]: ['cat', 'cc', 'colouredcoin'],
 };

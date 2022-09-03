@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { useWatch } from 'react-hook-form';
 import { t, Trans } from '@lingui/macro';
-import { CardStep, Select, StateColor } from '@chia/core';
-import { useGetPlottersQuery } from '@chia/api-react';
+import { CardStep, Select, StateColor } from '@lotus/core';
+import { useGetPlottersQuery } from '@lotus/api-react';
 import {
   FormControl,
   FormHelperText,
@@ -12,8 +12,8 @@ import {
   Typography,
 } from '@mui/material';
 import styled from 'styled-components';
-import { defaultPlotter, PlotterName } from '@chia/api';
-import type { Plotter, PlotterMap } from '@chia/api';
+import { defaultPlotter, PlotterName } from '@lotus/api';
+import type { Plotter, PlotterMap } from '@lotus/api';
 
 type Props = {
   step: number;

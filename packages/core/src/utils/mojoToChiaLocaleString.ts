@@ -1,9 +1,9 @@
 import BigNumber from 'bignumber.js';
 import Unit from '../constants/Unit';
-import chiaFormatter from './chiaFormatter';
+import lotusFormatter from './lotusFormatter';
 
-export default function mojoToChiaLocaleString(mojo: string | number | BigNumber, locale?: string) {
-  return chiaFormatter(mojo, Unit.MOJO)
-    .to(Unit.CHIA)
+export default function mojoToLotusLocaleString(mojo: string | number | BigNumber, locale?: string) {
+  return lotusFormatter(mojo, Unit.MOJO)
+    .to(Unit.LOTUS)
     .toLocaleString(locale);
 }

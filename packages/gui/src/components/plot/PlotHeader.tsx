@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { Trans } from '@lingui/macro';
-import { Button, Flex, More, useOpenDialog } from '@chia/core';
+import { Button, Flex, More, useOpenDialog } from '@lotus/core';
 import { createTeleporter } from 'react-teleporter';
 import { useNavigate, useParams } from 'react-router-dom';
 import {
@@ -14,7 +14,7 @@ import {
   Folder as FolderIcon,
   Add as AddIcon,
 } from '@mui/icons-material';
-import { useRefreshPlotsMutation } from '@chia/api-react';
+import { useRefreshPlotsMutation } from '@lotus/api-react';
 import PlotAddDirectoryDialog from './PlotAddDirectoryDialog';
 
 type Props = {

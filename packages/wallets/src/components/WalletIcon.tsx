@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCurrencyCode } from '@chia/core';
+import { useCurrencyCode } from '@lotus/core';
 import styled from 'styled-components';
-import { useGetCatListQuery } from '@chia/api-react';
-import { WalletType, type Wallet } from '@chia/api';
+import { useGetCatListQuery } from '@lotus/api-react';
+import { WalletType, type Wallet } from '@lotus/api';
 import { Typography, type TypographyProps } from '@mui/material';
 
 const StyledSymbol = styled(Typography)`

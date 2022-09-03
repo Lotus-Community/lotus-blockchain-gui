@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import type { PlotNFT, Plot } from '@chia/api';
-import { useIsWalletSynced } from '@chia/wallets';
+import type { PlotNFT, Plot } from '@lotus/api';
+import { useIsWalletSynced } from '@lotus/wallets';
 import PlotNFTState from '../constants/PlotNFTState';
 import usePlotNFTName from './usePlotNFTName';
 

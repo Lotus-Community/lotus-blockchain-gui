@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useCurrencyCode, mojoToChiaLocaleString, CardSimple, useLocale } from '@chia/core';
-import { useGetFarmedAmountQuery } from '@chia/api-react';
+import { useCurrencyCode, mojoToLotusLocaleString, CardSimple, useLocale } from '@lotus/core';
+import { useGetFarmedAmountQuery } from '@lotus/api-react';
 
 export default function FarmCardUserFees() {
   const currencyCode = useCurrencyCode();
@@ -14,7 +14,7 @@ export default function FarmCardUserFees() {
     if (feeAmount !== undefined) {
       return (
         <>
-          {mojoToChiaLocaleString(feeAmount, locale)}
+          {mojoToLotusLocaleString(feeAmount, locale)}
           &nbsp;
           {currencyCode}
         </>

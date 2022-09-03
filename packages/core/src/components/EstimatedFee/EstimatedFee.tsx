@@ -2,13 +2,13 @@ import React from 'react';
 import { get } from 'lodash';
 import { Controller, useFormContext } from 'react-hook-form';
 import { Trans } from '@lingui/macro';
-import { useGetFeeEstimateQuery } from '@chia/api-react';
+import { useGetFeeEstimateQuery } from '@lotus/api-react';
 import {
   Fee,
   Flex,
-  mojoToChiaLocaleString,
+  mojoToLotusLocaleString,
   useLocale,
-} from '@chia/core';
+} from '@lotus/core';
 import {
   FormControl,
   IconButton,
@@ -87,7 +87,7 @@ export default function EstimatedFee(props: FeeProps) {
 
   function formatEst(number, multiplier, locale) {
     let num = (Math.round(number * multiplier * (10**(-4)))) * (10**(4));
-    let formatNum = mojoToChiaLocaleString(num, locale);
+    let formatNum = mojoToLotusLocaleString(num, locale);
     return (formatNum);
   }
 

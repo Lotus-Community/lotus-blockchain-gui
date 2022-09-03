@@ -1,10 +1,10 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router-dom';
-import { useRefreshPlotsMutation } from '@chia/api-react';
+import { useRefreshPlotsMutation } from '@lotus/api-react';
 import { Grid, Typography, Divider } from '@mui/material';
-import { Button, CardHero, Flex, Link, useOpenDialog } from '@chia/core';
-import { Plots } from '@chia/icons';
+import { Button, CardHero, Flex, Link, useOpenDialog } from '@lotus/core';
+import { Plots } from '@lotus/icons';
 import PlotAddDirectoryDialog from '../PlotAddDirectoryDialog';
 
 export default function PlotOverviewHero() {
@@ -31,11 +31,11 @@ export default function PlotOverviewHero() {
           <Plots color="primary" fontSize="extraLarge" />
           <Typography variant="body1">
             <Trans>
-              Plots are allocated space on your hard drive used to farm and earn Chia.
+              Plots are allocated space on your hard drive used to farm and earn Lotus.
               &nbsp;
               <Link
                 target="_blank"
-                href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture"
+                href="https://github.com/Chia-Network/lotus-blockchain/wiki/Network-Architecture"
               >
                 Learn more
               </Link>

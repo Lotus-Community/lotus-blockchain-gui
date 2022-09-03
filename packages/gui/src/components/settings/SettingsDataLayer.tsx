@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, SettingsLabel } from '@chia/core';
+import { Flex, SettingsLabel } from '@lotus/core';
 import {
   FormGroup,
   FormControlLabel,
@@ -55,7 +55,7 @@ export default function SettingsDataLayer() {
           </FormGroup>
           <Typography variant="body2" color="textSecondary">
             <Trans>
-              Changes will take effect the next time Chia is started
+              Changes will take effect the next time Lotus is started
             </Trans>
           </Typography>
         </Flex>

@@ -1,12 +1,12 @@
 import { BaseQueryFn } from '@reduxjs/toolkit/query/react';
-import Client, { Service } from '@chia/api';
+import Client, { Service } from '@lotus/api';
 
 type Options = {
   client: Client;
   service: Service;
 };
 
-export default function chiaBaseQuery(options: Options): BaseQueryFn<
+export default function lotusBaseQuery(options: Options): BaseQueryFn<
   {
     command: string; 
     args?: any[],

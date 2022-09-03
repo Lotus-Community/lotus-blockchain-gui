@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
-import type { Wallet } from '@chia/api';
-import { WalletType } from '@chia/api';
-import { useGetWalletsQuery, useGetWalletBalanceQuery } from '@chia/api-react';
+import type { Wallet } from '@lotus/api';
+import { WalletType } from '@lotus/api';
+import { useGetWalletsQuery, useGetWalletBalanceQuery } from '@lotus/api-react';
 
 export default function useStandardWallet(): {
   loading: boolean;

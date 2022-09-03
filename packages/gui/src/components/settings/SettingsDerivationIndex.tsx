@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Trans, t } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
-import { SyncingStatus } from '@chia/api';
+import { SyncingStatus } from '@lotus/api';
 import {
   useExtendDerivationIndexMutation,
   useGetCurrentDerivationIndexQuery,
-} from '@chia/api-react';
+} from '@lotus/api-react';
 import {
   AlertDialog,
   ButtonLoading,
@@ -13,8 +13,8 @@ import {
   Form,
   TextField,
   useOpenDialog,
-} from '@chia/core';
-import { useWalletState } from '@chia/wallets';
+} from '@lotus/core';
+import { useWalletState } from '@lotus/wallets';
 
 type FormData = {
   index: string;

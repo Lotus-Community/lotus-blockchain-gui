@@ -11,13 +11,13 @@ import {
   useColorModeValue,
   useOpenExternal,
   FormatLargeNumber,
-} from '@chia/core';
+} from '@lotus/core';
 import {
   useGetLoggedInFingerprintQuery,
   useGetPrivateKeyQuery,
   useGetWalletsQuery,
-} from '@chia/api-react';
-import { WalletType } from '@chia/api';
+} from '@lotus/api-react';
+import { WalletType } from '@lotus/api';
 import styled from 'styled-components';
 import WalletIcon from './WalletIcon';
 import getWalletPrimaryTitle from '../utils/getWalletPrimaryTitle';
@@ -104,7 +104,7 @@ export default function WalletsSidebar() {
     );
 
   function handleOpenBlogPost() {
-    openExternal('https://www.chia.net/cat2blog');
+    openExternal('https://www.lotus.net/cat2blog');
   }
 
   function openTokensInfoDialog() {
@@ -134,7 +134,7 @@ export default function WalletsSidebar() {
                 size="large"
                 onClick={() =>
                   openExternal(
-                    'https://cat1.chia.net/#publicKey=' +
+                    'https://cat1.lotus.net/#publicKey=' +
                       privateKey.pk +
                       '&fingerprint=' +
                       fingerprint
@@ -156,7 +156,7 @@ export default function WalletsSidebar() {
           <p>
             <Trans>Want to see your old balance for yourself?</Trans>
           </p>
-          <Link target="_blank" href="https://www.chia.net/download/">
+          <Link target="_blank" href="https://www.lotus.net/download/">
             <Trans>Click here to download an older version of the wallet</Trans>
           </Link>
         </ContentStyled>

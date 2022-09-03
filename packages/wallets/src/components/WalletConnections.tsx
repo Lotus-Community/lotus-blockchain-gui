@@ -5,10 +5,10 @@ import {
   FormatBytes,
   Loading,
   Table,
-} from '@chia/core';
+} from '@lotus/core';
 import { Tooltip } from '@mui/material';
-import { Connection, ServiceConnectionName } from '@chia/api';
-import { useGetWalletConnectionsQuery } from '@chia/api-react';
+import { Connection, ServiceConnectionName } from '@lotus/api';
+import { useGetWalletConnectionsQuery } from '@lotus/api-react';
 
 const cols = [
   {

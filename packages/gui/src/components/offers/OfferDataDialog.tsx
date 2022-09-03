@@ -10,7 +10,7 @@ import {
   InputAdornment,
   TextField,
 } from '@mui/material';
-import { CopyToClipboard, DialogActions } from '@chia/core';
+import { CopyToClipboard, DialogActions } from '@lotus/core';
 
 type Props = {
   offerData: string;

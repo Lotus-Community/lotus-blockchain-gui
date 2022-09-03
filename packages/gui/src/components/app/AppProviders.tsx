@@ -12,8 +12,8 @@ import {
   dark,
   light,
   ErrorBoundary,
-} from '@chia/core';
-import { store, api } from '@chia/api-react';
+} from '@lotus/core';
+import { store, api } from '@lotus/api-react';
 import { Trans } from '@lingui/macro';
 import { i18n, defaultLocale, locales } from '../../config/locales';
 import AppState from './AppState';

@@ -1,4 +1,4 @@
-import { WalletType } from '@chia/api';
+import { WalletType } from '@lotus/api';
 
 type Coin = {
   confirmed_block_index: number;

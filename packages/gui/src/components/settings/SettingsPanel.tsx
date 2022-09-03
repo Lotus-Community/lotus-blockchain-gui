@@ -12,8 +12,8 @@ import {
   StateTypography,
   State,
   TooltipIcon,
-} from '@chia/core';
-import { useGetKeyringStatusQuery } from '@chia/api-react';
+} from '@lotus/core';
+import { useGetKeyringStatusQuery } from '@lotus/api-react';
 import { Tooltip } from '@mui/material';
 import { Help as HelpIcon } from '@mui/icons-material';
 import ChangePassphrasePrompt from './ChangePassphrasePrompt';

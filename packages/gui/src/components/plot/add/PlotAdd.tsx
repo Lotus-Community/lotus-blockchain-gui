@@ -1,6 +1,6 @@
 import React from 'react';
-import { useGetLoggedInFingerprintQuery, useGetPlottersQuery } from '@chia/api-react';
-import { useCurrencyCode, Suspender } from '@chia/core';
+import { useGetLoggedInFingerprintQuery, useGetPlottersQuery } from '@lotus/api-react';
+import { useCurrencyCode, Suspender } from '@lotus/core';
 import PlotAddConfig from '../../../types/PlotAdd';
 import useUnconfirmedPlotNFTs from '../../../hooks/useUnconfirmedPlotNFTs';
 import PlotAddForm from './PlotAddForm';

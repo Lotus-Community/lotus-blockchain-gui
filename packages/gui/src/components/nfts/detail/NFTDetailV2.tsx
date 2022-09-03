@@ -6,9 +6,9 @@ import {
   LayoutDashboardSub,
   Loading,
   useOpenDialog,
-} from '@chia/core';
-import type { NFTInfo } from '@chia/api';
-import { useGetNFTWallets } from '@chia/api-react';
+} from '@lotus/core';
+import type { NFTInfo } from '@lotus/api';
+import { useGetNFTWallets } from '@lotus/api-react';
 import { Box, Grid, Typography, IconButton } from '@mui/material';
 import { MoreVert } from '@mui/icons-material';
 import { useParams } from 'react-router-dom';

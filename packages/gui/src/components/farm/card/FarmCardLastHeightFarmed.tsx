@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatLargeNumber, CardSimple } from '@chia/core';
-import { useGetFarmedAmountQuery } from '@chia/api-react';
+import { FormatLargeNumber, CardSimple } from '@lotus/core';
+import { useGetFarmedAmountQuery } from '@lotus/api-react';
 
 export default function FarmCardLastHeightFarmed() {
   const { data, isLoading, error } = useGetFarmedAmountQuery();

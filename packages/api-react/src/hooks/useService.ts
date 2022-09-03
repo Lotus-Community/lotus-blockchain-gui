@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ServiceName } from '@chia/api';
+import { ServiceName } from '@lotus/api';
 import { useClientStartServiceMutation } from '../services/client';
 import {
   useIsServiceRunningQuery,

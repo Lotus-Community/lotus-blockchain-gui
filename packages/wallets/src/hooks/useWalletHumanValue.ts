@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
-import type { Wallet } from '@chia/api';
-import { WalletType } from '@chia/api';
+import type { Wallet } from '@lotus/api';
+import { WalletType } from '@lotus/api';
 import BigNumber from 'bignumber.js';
-import { mojoToCATLocaleString, mojoToChiaLocaleString, useLocale } from '@chia/core';
+import { mojoToCATLocaleString, mojoToLotusLocaleString, useLocale } from '@lotus/core';
 
 export default function useWalletHumanValue(wallet: Wallet, value?: string | number | BigNumber, unit?: string): string {
   const [locale] = useLocale();
@@ -11,7 +11,7 @@ export default function useWalletHumanValue(wallet: Wallet, value?: string | num
     if (wallet && value !== undefined) {
       const localisedValue = wallet.type === WalletType.CAT
         ? mojoToCATLocaleString(value, locale)
-        : mojoToChiaLocaleString(value, locale);
+        : mojoToLotusLocaleString(value, locale);
 
       return `${localisedValue} ${unit}`;
     }

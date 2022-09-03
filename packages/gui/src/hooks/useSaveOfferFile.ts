@@ -1,6 +1,6 @@
-import { OfferTradeRecord } from '@chia/api';
-import { useGetOfferDataMutation } from '@chia/api-react';
-import { useShowSaveDialog } from '@chia/core';
+import { OfferTradeRecord } from '@lotus/api';
+import { useGetOfferDataMutation } from '@lotus/api-react';
+import { useShowSaveDialog } from '@lotus/core';
 import fs from 'fs';
 import { suggestedFilenameForOffer } from '../components/offers/utils';
 import useAssetIdName from './useAssetIdName';

@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { WalletType } from '@chia/api';
-import type { CATToken, Wallet } from '@chia/api';
-import { useGetCatListQuery, useGetWalletsQuery } from '@chia/api-react';
-import { useCurrencyCode } from '@chia/core';
+import { WalletType } from '@lotus/api';
+import type { CATToken, Wallet } from '@lotus/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@lotus/api-react';
+import { useCurrencyCode } from '@lotus/core';
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
 type TokenSelectOption = {
@@ -44,7 +44,7 @@ export default function NFTOfferTokenSelector(props: Props) {
       return [];
     }
 
-    const chiaWalletSelection = [
+    const lotusWalletSelection = [
       wallets.find(
         (wallet: Wallet) => wallet.type === WalletType.STANDARD_WALLET,
       ),
@@ -52,9 +52,9 @@ export default function NFTOfferTokenSelector(props: Props) {
       return {
         walletId: wallet.id,
         walletType: wallet.type,
-        name: 'Chia',
+        name: 'Lotus',
         symbol: currencyCode,
-        displayName: `Chia (${currencyCode})`,
+        displayName: `Lotus (${currencyCode})`,
         disabled: false,
         tail: '',
       };
@@ -76,7 +76,7 @@ export default function NFTOfferTokenSelector(props: Props) {
           tail: wallet.tail,
         };
       });
-    const allOptions = [...chiaWalletSelection, ...catOptions];
+    const allOptions = [...lotusWalletSelection, ...catOptions];
     const selected = allOptions.find(
       (option: TokenSelectOption) => option.walletId === selectedWalletId,
     );

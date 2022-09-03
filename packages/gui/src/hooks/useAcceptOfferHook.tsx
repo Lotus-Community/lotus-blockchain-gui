@@ -1,14 +1,14 @@
 import React from 'react';
 import BigNumber from 'bignumber.js';
 import { Trans, t } from '@lingui/macro';
-import { OfferSummaryRecord } from '@chia/api';
-import { useTakeOfferMutation } from '@chia/api-react';
+import { OfferSummaryRecord } from '@lotus/api';
+import { useTakeOfferMutation } from '@lotus/api-react';
 import {
   AlertDialog,
-  chiaToMojo,
+  lotusToMojo,
   useOpenDialog,
   useShowError,
-} from '@chia/core';
+} from '@lotus/core';
 import useAssetIdName from './useAssetIdName';
 import OfferAcceptConfirmationDialog from '../components/offers/OfferAcceptConfirmationDialog';
 import OfferAsset from '../components/offers/OfferAsset';
@@ -35,7 +35,7 @@ export default function useAcceptOfferHook(): [AcceptOfferHook] {
     onUpdate: (accepting: boolean) => void,
     onSuccess: () => void,
   ): Promise<void> {
-    const feeInMojos: BigNumber = fee ? chiaToMojo(fee) : new BigNumber(0);
+    const feeInMojos: BigNumber = fee ? lotusToMojo(fee) : new BigNumber(0);
     const offeredUnknownCATs: string[] = Object.entries(offerSummary.offered)
       .filter(
         ([assetId]) =>

@@ -9,7 +9,7 @@ import {
   Loading,
   TextField,
   Form,
-} from '@chia/core';
+} from '@lotus/core';
 import {
   Alert,
   Dialog,

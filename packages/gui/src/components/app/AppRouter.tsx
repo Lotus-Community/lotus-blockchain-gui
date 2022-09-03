@@ -6,8 +6,8 @@ import {
   LayoutDashboard,
   Mode,
   useMode,
-} from '@chia/core';
-import { WalletAdd, WalletImport, Wallets } from '@chia/wallets';
+} from '@lotus/core';
+import { WalletAdd, WalletImport, Wallets } from '@lotus/wallets';
 import AppProviders from './AppProviders';
 import FullNode from '../fullNode/FullNode';
 import Block from '../block/Block';

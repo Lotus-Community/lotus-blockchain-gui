@@ -4,31 +4,31 @@ import path from 'path';
 import fs from 'fs';
 
 export function getUserDataDir(): string {
-  const chiaRootPath = getConfigRootDir();
+  const lotusRootPath = getConfigRootDir();
   const appName = app.getName();
-  const userDataDir = path.join(chiaRootPath, 'gui', appName);
+  const userDataDir = path.join(lotusRootPath, 'gui', appName);
   return userDataDir;
 }
 
 export function setUserDataDir(): void {
-  const chiaRootUserDataPath = getUserDataDir();
+  const lotusRootUserDataPath = getUserDataDir();
 
   migrateUserDataIfNecessary();
 
-  console.info(`Setting user data directory to ${chiaRootUserDataPath}`);
-  app.setPath('userData', chiaRootUserDataPath);
+  console.info(`Setting user data directory to ${lotusRootUserDataPath}`);
+  app.setPath('userData', lotusRootUserDataPath);
 }
 
 export function migrateUserDataIfNecessary() {
   const defaultUserDataPath = app.getPath('userData');
-  const chiaRootUserDataPath = getUserDataDir();
+  const lotusRootUserDataPath = getUserDataDir();
   const leveldbSrcPath = path.join(
     defaultUserDataPath,
     'Local Storage',
     'leveldb',
   );
   const leveldbDestPath = path.join(
-    chiaRootUserDataPath,
+    lotusRootUserDataPath,
     'Local Storage',
     'leveldb',
   );

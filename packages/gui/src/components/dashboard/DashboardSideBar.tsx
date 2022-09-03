@@ -11,8 +11,8 @@ import {
   Offers as OffersIcon,
   Tokens as TokensIcon,
   Settings as SettingsIcon,
-} from '@chia/icons';
-import { Flex, SideBarItem } from '@chia/core';
+} from '@lotus/icons';
+import { Flex, SideBarItem } from '@lotus/core';
 
 const StyledItemsContainer = styled(Flex)`
   flex-direction: column;

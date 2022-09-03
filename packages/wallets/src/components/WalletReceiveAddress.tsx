@@ -7,11 +7,11 @@ import {
   Loading,
   Flex,
   TooltipIcon,
-} from '@chia/core';
+} from '@lotus/core';
 import {
   useGetCurrentAddressQuery,
   useGetNextAddressMutation,
-} from '@chia/api-react';
+} from '@lotus/api-react';
 import {
   Box,
   TextField,

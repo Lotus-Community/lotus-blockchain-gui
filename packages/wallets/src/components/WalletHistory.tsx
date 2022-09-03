@@ -26,17 +26,17 @@ import {
   TableControlled,
   useCurrencyCode,
   useSerializedNavigationState,
-  mojoToChia,
+  mojoToLotus,
   mojoToCAT,
   FormatLargeNumber,
-} from '@chia/core';
+} from '@lotus/core';
 import {
   useGetOfferRecordMutation,
   useGetSyncStatusQuery,
-} from '@chia/api-react';
+} from '@lotus/api-react';
 import styled from 'styled-components';
-import type { Row } from '@chia/core';
-import { WalletType, TransactionType, toBech32m } from '@chia/api';
+import type { Row } from '@lotus/core';
+import { WalletType, TransactionType, toBech32m } from '@lotus/api';
 import useWallet from '../hooks/useWallet';
 import useWalletTransactions from '../hooks/useWalletTransactions';
 
@@ -214,7 +214,7 @@ const getCols = (type: WalletType, isSyncing, getOfferRecord, navigate) => [
               value={
                 type === WalletType.CAT
                   ? mojoToCAT(row.amount)
-                  : mojoToChia(row.amount)
+                  : mojoToLotus(row.amount)
               }
             />
           </strong>
@@ -229,7 +229,7 @@ const getCols = (type: WalletType, isSyncing, getOfferRecord, navigate) => [
     field: (row: Row, metadata) => (
       <>
         <strong>
-          <FormatLargeNumber value={mojoToChia(row.feeAmount)} />
+          <FormatLargeNumber value={mojoToLotus(row.feeAmount)} />
         </strong>
         &nbsp;
         {metadata.feeUnit}

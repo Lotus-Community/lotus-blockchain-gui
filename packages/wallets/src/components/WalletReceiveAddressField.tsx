@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { t, Trans } from '@lingui/macro';
-import { CopyToClipboard, Loading, Flex } from '@chia/core';
-import { useGetCurrentAddressQuery, useGetNextAddressMutation } from '@chia/api-react';
+import { CopyToClipboard, Loading, Flex } from '@lotus/core';
+import { useGetCurrentAddressQuery, useGetNextAddressMutation } from '@lotus/api-react';
 import {
   TextField,
   InputAdornment,

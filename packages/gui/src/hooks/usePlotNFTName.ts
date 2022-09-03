@@ -6,7 +6,7 @@ import {
   colors,
   animals,
 } from 'unique-names-generator';
-import type { PlotNFTExternal, PlotNFT } from '@chia/api';
+import type { PlotNFTExternal, PlotNFT } from '@lotus/api';
 
 const uniqueNames: {
   [key: string]: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog, chiaToMojo } from '@chia/core';
+import { AlertDialog, lotusToMojo } from '@lotus/core';
 import {
   Typography,
   Button,
@@ -75,7 +75,7 @@ export const CreateRLAdminWallet = () => {
   const custom = customStyles();
   const dispatch = useDispatch();
   let interval_input = null;
-  let chiaper_input = null;
+  let lotusper_input = null;
   let userpubkey_input = null;
   let amount_input = null;
   let fee_input = null;
@@ -103,10 +103,10 @@ export const CreateRLAdminWallet = () => {
       return;
     }
     if (
-      chiaper_input.value === '' ||
-      Number(chiaper_input.value) === 0 ||
-      !Number(chiaper_input.value) ||
-      isNaN(Number(chiaper_input.value))
+      lotusper_input.value === '' ||
+      Number(lotusper_input.value) === 0 ||
+      !Number(lotusper_input.value) ||
+      isNaN(Number(lotusper_input.value))
     ) {
       dispatch(
         openDialog(
@@ -155,18 +155,18 @@ export const CreateRLAdminWallet = () => {
     dispatch(createState(true, true));
     const interval = interval_input.value;
     const interval_value = Number.parseInt(Number(interval));
-    const chiaper = chiaToMojo(chiaper_input.value);
-    const chiaper_value = Number.parseInt(Number(chiaper));
+    const lotusper = lotusToMojo(lotusper_input.value);
+    const lotusper_value = Number.parseInt(Number(lotusper));
     const userpubkey = userpubkey_input.value;
-    const amount = chiaToMojo(amount_input.value);
+    const amount = lotusToMojo(amount_input.value);
     const amount_value = Number.parseInt(Number(amount));
-    // var fee = chiaToMojo(fee_input.value);
+    // var fee = lotusToMojo(fee_input.value);
     // TODO(lipa): send fee to server
     // const fee_value = parseInt(Number(fee));
     dispatch(
       create_rl_admin_action(
         interval_value,
-        chiaper_value,
+        lotusper_value,
         userpubkey,
         amount_value,
       ),
@@ -224,7 +224,7 @@ export const CreateRLAdminWallet = () => {
               color="secondary"
               fullWidth
               inputRef={(input) => {
-                chiaper_input = input;
+                lotusper_input = input;
               }}
               label={<Trans>Spendable Amount</Trans>}
             />

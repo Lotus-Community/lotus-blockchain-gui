@@ -1,4 +1,4 @@
-export { default as Chia } from './Chia';
+export { default as Lotus } from './Lotus';
 export { default as Farm } from './Farm';
 export { default as Farming } from './Farming';
 export { default as FullNode } from './FullNode';

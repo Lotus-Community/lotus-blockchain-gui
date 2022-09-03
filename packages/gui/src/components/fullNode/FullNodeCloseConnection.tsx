@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { ConfirmDialog, useOpenDialog } from '@chia/core';
-import { useCloseFullNodeConnectionMutation } from '@chia/api-react';
+import { ConfirmDialog, useOpenDialog } from '@lotus/core';
+import { useCloseFullNodeConnectionMutation } from '@lotus/api-react';
 
 type Props = {
   nodeId: string;

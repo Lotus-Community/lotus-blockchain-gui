@@ -1,4 +1,4 @@
-import { SyncingStatus } from '@chia/api';
+import { SyncingStatus } from '@lotus/api';
 import useWalletState from './useWalletState';
 
 export default function useIsWalletSynced(): boolean {

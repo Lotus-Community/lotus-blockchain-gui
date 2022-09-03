@@ -1,15 +1,15 @@
 import React, { useEffect, useMemo } from 'react';
 import { Trans } from '@lingui/macro';
 import { IconButton, Typography } from '@mui/material';
-import { Flex } from '@chia/core';
+import { Flex } from '@lotus/core';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import IdentitiesPanel from './IdentitiesPanel';
-import { LayoutDashboardSub } from '@chia/core';
+import { LayoutDashboardSub } from '@lotus/core';
 import ProfileView from './ProfileView';
 import ProfileAdd from './ProfileAdd';
 import { Add } from '@mui/icons-material';
-import { useGetWalletsQuery } from '@chia/api-react';
-import { WalletType } from '@chia/api';
+import { useGetWalletsQuery } from '@lotus/api-react';
+import { WalletType } from '@lotus/api';
 
 export default function SettingsProfiles() {
   const navigate = useNavigate();

@@ -7,7 +7,7 @@ import {
   Flex,
   useOpenDialog,
   useOpenExternal,
-} from '@chia/core';
+} from '@lotus/core';
 import {
   Checkbox,
   FormControlLabel,

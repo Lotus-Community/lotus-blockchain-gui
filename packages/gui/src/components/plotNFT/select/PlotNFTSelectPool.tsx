@@ -7,7 +7,7 @@ import React, {
 import { Alert } from '@mui/material';
 import { t, Trans } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
-import { ButtonLoading, Loading, Flex, Form, Back, chiaToMojo, ConfirmDialog, useOpenDialog } from '@chia/core';
+import { ButtonLoading, Loading, Flex, Form, Back, lotusToMojo, ConfirmDialog, useOpenDialog } from '@lotus/core';
 import PlotNFTSelectBase from './PlotNFTSelectBase';
 import normalizeUrl from '../../../util/normalizeUrl';
 import getPoolInfo from '../../../util/getPoolInfo';
@@ -44,7 +44,7 @@ async function prepareSubmitData(data: FormData): SubmitData {
     initialTargetState.relativeLockHeight = relativeLockHeight;
   }
 
-  const feeMojos = chiaToMojo(fee || '0');
+  const feeMojos = lotusToMojo(fee || '0');
 
   return {
     fee: feeMojos,
