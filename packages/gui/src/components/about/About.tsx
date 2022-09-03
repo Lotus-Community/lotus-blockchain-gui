@@ -71,7 +71,7 @@ const Spacer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const url = 'https://lotus.net';
+const url = 'https://lotusgang.org';
 
 type Props = {
   version: string;

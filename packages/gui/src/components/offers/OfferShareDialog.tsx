@@ -73,7 +73,7 @@ type CommonDialogProps = {
 
 type OfferShareServiceDialogProps = CommonOfferProps & CommonDialogProps;
 
-const testnetDummyHost = 'offers-api-sim.lotus.net';
+const testnetDummyHost = 'offers-api-sim.lotusgang.org';
 
 const OfferSharingProviders: {
   [key in OfferSharingService]: OfferSharingProvider;
@@ -243,7 +243,7 @@ async function postToOfferBin(
   console.log('OfferBin upload completed');
 
   if (testnet) {
-    return 'https://www.lotus.net/offers';
+    return 'https://www.lotusgang.org/offers';
   }
 
   const { hash } = JSON.parse(responseBody);
@@ -294,7 +294,7 @@ async function postToHashgreen(
     console.log('Hashgreen upload completed');
 
     if (testnet) {
-      return 'https://www.lotus.net/offers';
+      return 'https://www.lotusgang.org/offers';
     }
 
     const jsonObj = JSON.parse(responseBody);

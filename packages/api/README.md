@@ -1,8 +1,8 @@
 # @lotus/api
 
-![Alt text](https://www.lotus.net/img/lotus_logo.svg)
+![Alt text](https://www.lotusgang.org/img/lotus_logo.svg)
 
-This library provides support for TypeScript/JavaScript [Lotus](https://www.lotus.net) apps to access the [Lotus Blockchain RPC](https://github.com/Chia-Network/Chia-blockchain/wiki/RPC-Interfaces), by making it easier to perform the following actions:
+This library provides support for TypeScript/JavaScript [Lotus](https://www.lotusgang.org) apps to access the [Lotus Blockchain RPC](https://github.com/Chia-Network/Chia-blockchain/wiki/RPC-Interfaces), by making it easier to perform the following actions:
 
 - Making requests to the Lotus Blockchain RPC.
 - Catch responses and errors with standard try/catch and async/await syntax.

@@ -54,7 +54,7 @@ export default function ProfileAdd() {
   const openExternal = useOpenExternal();
 
   function handleClick() {
-    openExternal('https://faucet.lotus.net/');
+    openExternal('https://faucet.lotusgang.org/');
   }
 
   async function handleSubmit(data: CreateProfileData) {

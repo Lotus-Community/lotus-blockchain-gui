@@ -30,7 +30,7 @@ async function openFAQURL(): Promise<void> {
 async function openSendFeedbackURL(): Promise<void> {
   try {
     const shell: Shell = (window as any).shell;
-    await shell.openExternal('https://feedback.lotus.net/lightwallet');
+    await shell.openExternal('https://feedback.lotusgang.org/lightwallet');
   }
   catch (e) {
     console.error(e);
