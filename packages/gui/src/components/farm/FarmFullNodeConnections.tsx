@@ -96,7 +96,7 @@ export default function FarmFullNodeConnections() {
           {'The full node that your farmer is connected to is below. '}
           <Link
             target="_blank"
-            href="https://github.com/Chia-Network/lotus-blockchain/wiki/Network-Architecture"
+            href="https://github.com/Chia-Network/Chia-blockchain/wiki/Network-Architecture"
           >
             Learn more
           </Link>

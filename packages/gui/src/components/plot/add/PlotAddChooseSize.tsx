@@ -79,7 +79,7 @@ export default function PlotAddChooseSize(props: Props) {
           }
           <Link
             target="_blank"
-            href="https://github.com/Chia-Network/lotus-blockchain/wiki/k-sizes"
+            href="https://github.com/Chia-Network/Chia-blockchain/wiki/k-sizes"
           >
             Learn more
           </Link>

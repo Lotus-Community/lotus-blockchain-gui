@@ -35,7 +35,7 @@ export default function PlotOverviewHero() {
               &nbsp;
               <Link
                 target="_blank"
-                href="https://github.com/Chia-Network/lotus-blockchain/wiki/Network-Architecture"
+                href="https://github.com/Chia-Network/Chia-blockchain/wiki/Network-Architecture"
               >
                 Learn more
               </Link>

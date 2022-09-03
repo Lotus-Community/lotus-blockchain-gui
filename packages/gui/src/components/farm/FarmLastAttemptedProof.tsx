@@ -49,7 +49,7 @@ export default function FarmLastAttemptedProof() {
           challenge.{' '}
           <Link
             target="_blank"
-            href="https://github.com/Chia-Network/lotus-blockchain/wiki/FAQ#what-is-the-plot-filter-and-why-didnt-my-plot-pass-it"
+            href="https://github.com/Chia-Network/Chia-blockchain/wiki/FAQ#what-is-the-plot-filter-and-why-didnt-my-plot-pass-it"
           >
             Learn more
           </Link>

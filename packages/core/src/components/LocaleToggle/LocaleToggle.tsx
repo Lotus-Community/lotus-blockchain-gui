@@ -36,7 +36,7 @@ export default function LocaleToggle(props) {
     handleClose();
 
     openExternal(
-      'https://github.com/Chia-Network/lotus-blockchain-gui/tree/main/src/locales/README.md',
+      'https://github.com/Chia-Network/Chia-blockchain-gui/tree/main/src/locales/README.md',
     );
   }
 

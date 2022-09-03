@@ -147,7 +147,7 @@ export default function About(props: Props) {
         </VersionsTable>
 
         <BugReport
-          href="https://github.com/Chia-Network/lotus-blockchain/issues"
+          href="https://github.com/Chia-Network/Chia-blockchain/issues"
           target="_blank"
         >
           Report an issue

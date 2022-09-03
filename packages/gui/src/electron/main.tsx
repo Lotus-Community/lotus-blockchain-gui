@@ -587,7 +587,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Lotus Blockchain Wiki' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/lotus-blockchain/wiki',
+                'https://github.com/Chia-Network/Chia-blockchain/wiki',
               );
             },
           },
@@ -595,7 +595,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/lotus-blockchain/wiki/FAQ',
+                'https://github.com/Chia-Network/Chia-blockchain/wiki/FAQ',
               );
             },
           },
@@ -603,7 +603,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/lotus-blockchain/releases',
+                'https://github.com/Chia-Network/Chia-blockchain/releases',
               );
             },
           },
@@ -611,7 +611,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/lotus-blockchain/blob/main/CONTRIBUTING.md',
+                'https://github.com/Chia-Network/Chia-blockchain/blob/main/CONTRIBUTING.md',
               );
             },
           },
@@ -622,7 +622,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/lotus-blockchain/issues',
+                'https://github.com/Chia-Network/Chia-blockchain/issues',
               );
             },
           },
