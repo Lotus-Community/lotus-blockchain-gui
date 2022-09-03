@@ -77,7 +77,7 @@ export default function EstimatedFee(props: FeeProps) {
   const offersAcceptsPerBlock = 500;
 
   const txCostEstimates = {
-      walletSendXCH: Math.floor(maxBlockCostCLVM / 1170),
+      walletSendLCH: Math.floor(maxBlockCostCLVM / 1170),
       createOffer: Math.floor(maxBlockCostCLVM / offersAcceptsPerBlock),
       sellNFT: Math.floor(maxBlockCostCLVM / 92),
       createPoolingWallet: Math.floor(maxBlockCostCLVM / 462)  // JOIN_POOL in GUI = create pooling wallet
@@ -125,7 +125,7 @@ export default function EstimatedFee(props: FeeProps) {
             >
               <Flex flexDirection="row" flexGrow={1} justifyContent="space-between" alignItems="center">
                 <Flex>
-                  <Trans>{option.estimate} TXCH</Trans>
+                  <Trans>{option.estimate} TLCH</Trans>
                 </Flex>
                 <Flex alignSelf="center">
                   <Trans><Typography color="textSecondary" fontSize="small">{option.time}</Typography></Trans>

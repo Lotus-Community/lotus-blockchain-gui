@@ -63,7 +63,7 @@ export default function Amount(props: AmountProps) {
   const correctedValue = value && value[0] === '.' ? `0${value}` : value;
 
   const currencyCode = symbol === undefined ? defaultCurrencyCode : symbol;
-  const isLotusCurrency = ['XCH', 'TXCH'].includes(currencyCode);
+  const isLotusCurrency = ['LCH', 'TLCH'].includes(currencyCode);
   const mojo = isLotusCurrency
     ? lotusToMojo(correctedValue)
     : catToMojo(correctedValue);

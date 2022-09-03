@@ -35,7 +35,7 @@ export default function useAssetIdName() {
       let isVerified = false;
 
       if (walletType === WalletType.STANDARD_WALLET) {
-        assetId = 'xch';
+        assetId = 'lch';
         name = 'Lotus';
         symbol = currencyCode;
         isVerified = true;
@@ -89,11 +89,11 @@ export default function useAssetIdName() {
       assetIdNameMapping.set(assetId, entry);
     });
 
-    // If using testnet, add a TXCH assetId entry
-    if (currencyCode === 'TXCH') {
-      const assetId = 'txch';
+    // If using testnet, add a TLCH assetId entry
+    if (currencyCode === 'TLCH') {
+      const assetId = 'tlch';
       const name = 'Lotus (Testnet)';
-      const symbol = 'TXCH';
+      const symbol = 'TLCH';
       const displayName = symbol ? symbol : name;
       const entry: AssetIdMapEntry = {
         walletId: 1,

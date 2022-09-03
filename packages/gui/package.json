@@ -31,9 +31,9 @@
         ]
       },
       {
-        "name": "Lotus XCH Address",
+        "name": "Lotus LCH Address",
         "schemes": [
-          "xch"
+          "lch"
         ]
       }
     ],

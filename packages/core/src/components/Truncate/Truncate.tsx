@@ -21,7 +21,7 @@ export function truncateValue(
     leftLength = 4,
     rightLength = 4,
     splitSeparator = ':',
-    prefixes = ['nft1', 'txch1', 'xch1', 'did:lotus:1', '0x'],
+    prefixes = ['nft1', 'tlch1', 'lch1', 'did:lotus:1', '0x'],
   } = opts;
 
   if (!children) {

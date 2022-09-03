@@ -13,7 +13,7 @@ const display: {
   [key in Unit]: Display;
 } = {
   lotus: {
-    format: '{amount} XCH',
+    format: '{amount} LCH',
     fractionDigits: 12,
   },
   mojo: {
